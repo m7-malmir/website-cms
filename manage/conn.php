@@ -1,18 +1,16 @@
 <?php
 class Dbh{
   protected function connect(){
-      try {
+    try {
           $username="root";
           $password="";
           $dbh=new PDO("mysql:host=localhost;dbname=subasayesh",$username,$password);
-          // $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+          //$conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
           return $dbh;
-      } catch (\Throwable $th) {
-        
-          print 'Error!: '. $th->getMessage() ."<br/>";
-          die();
-          
-      }
+        } catch (\Throwable $th) { 
+        print 'Error!: '. $th->getMessage() ."<br/>";
+        die();    
+    }
   }
 }
 ?>

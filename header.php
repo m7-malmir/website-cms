@@ -1,7 +1,5 @@
 <?php 
-
 require 'manage/conn.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -21,7 +19,6 @@ require 'manage/conn.php';
     <div class="text-end text-left mr-4">شماره تماس کارخانه  : <a href="tel:02634251129">34251129-026</a></div>
 </div>
 <div class="menu-header ">
-  
   <div class="menu">
     <nav class="navbar navbar-expand-lg navbar-dark bg-menu ">
       <div class="container-fluid">
