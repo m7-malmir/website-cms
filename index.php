@@ -46,21 +46,20 @@ require_once 'header.php';
 <div class="cards mt-3 align-center row d-flex justify-content-center">
   <div class="text-center m-4"><h2>محبوب ترین محصولات ما</h2></div>
   <?php
-                $f_query="SELECT * FROM `product`";
-                $f_result=mysqli_query($mysqli,$f_query);
-                
-                while($post = mysqli_fetch_assoc($f_result)) :
+                $f=new ShowProduct();
+                $ok=$f->getProductInfo();
+                foreach($ok as $key=>$val) :
                 ?>
                 
                 <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="card card-index col-sm-1 col-md-4 col-lg-8 m-3">
-                  <img src="<?php echo $post['src1']; ?>" class="card-img-top" alt="...">
+                  <img src="<?php echo $val['src1']; ?>" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h5>
-                    <a href="<?= ROOT_URL ?>details.php?pr=<?php echo $post['id']; ?>" class="btn btn-primary">جزییات بیشتر</a>
+                    <h5 class="card-title"><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php echo $val['title']; ?></a></h5>
+                    <a href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>" class="btn btn-primary">جزییات بیشتر</a>
                   </div>
                 </div>
               
-                <?php endwhile ?>
+                <?php endforeach; ?>
    
 </div>
 <div class="categories row">

@@ -1,5 +1,6 @@
 <?php 
-require 'manage/conn.php';
+require './classes/dbh.php';
+require './classes/showProduct.classes.php';
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -44,14 +45,12 @@ require 'manage/conn.php';
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <?php
-                $f_query="SELECT * FROM `product`";
-                $f_result=mysqli_query($mysqli,$f_query);
-                
-                while($post = mysqli_fetch_assoc($f_result)) :
+                 $f=new ShowProduct;
+                 $ok=$f->getProductInfo();
+                 foreach ($ok as $key => $val) {
                 ?>
-                <li><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></li>
-              
-                <?php endwhile ?>
+                <li><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php print_r($val['title']); ?></a></li>
+                <?php } ?>
               </ul>
             </li>
             <li class="nav-item">

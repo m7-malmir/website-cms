@@ -1,4 +1,5 @@
 <?php
+define("ROOT_URL",'http://localhost/amini/');
 class Dbh{
   protected function connect(){
     try {
