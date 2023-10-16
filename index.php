@@ -46,8 +46,8 @@ require_once 'header.php';
 <div class="cards mt-3 align-center row d-flex justify-content-center">
   <div class="text-center m-4"><h2>محبوب ترین محصولات ما</h2></div>
   <?php
-                $f=new ShowProduct();
-                $ok=$f->getProductInfo();
+                $f=new ShowProductContr();
+                $ok=$f->showProduct();
                 foreach($ok as $key=>$val) :
                 ?>
                 

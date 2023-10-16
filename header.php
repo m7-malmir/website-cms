@@ -1,6 +1,7 @@
 <?php 
 require './classes/dbh.php';
 require './classes/showProduct.classes.php';
+require './classes/showProduct-contr.classes.php';
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -45,8 +46,8 @@ require './classes/showProduct.classes.php';
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <?php
-                 $f=new ShowProduct;
-                 $ok=$f->getProductInfo();
+                 $f=new ShowProductContr;
+                 $ok=$f->showProduct();
                  foreach ($ok as $key => $val) {
                 ?>
                 <li><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php print_r($val['title']); ?></a></li>
