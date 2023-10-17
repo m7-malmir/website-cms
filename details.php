@@ -7,10 +7,7 @@ if(isset($_GET['pr'])){
     $post=mysqli_fetch_assoc($res);
 ?>
 <section class="container-fluid ">
-
-   
         <div class="row d-flex align-items-center detail">
-
         <div dir="ltr" class="col-md-5  text-center ">
             <div class="col-md-6">
                 <img class="img-fluid1" src="<?= $post['src1'] ?>" alt="<?= $post['key1'] ?>">
