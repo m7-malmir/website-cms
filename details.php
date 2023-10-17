@@ -1,10 +1,11 @@
 <?php 
 require_once 'header.php';
+require_once './classes/showdetail.classes.php';
 if(isset($_GET['pr'])){
-    $id=filter_var($_GET['pr'],FILTER_SANITIZE_NUMBER_INT);
-    $query="select * from product where id=$id";
-    $res=mysqli_query($mysqli,$query);
-    $post=mysqli_fetch_assoc($res);
+$id=filter_var($_GET['pr'],FILTER_SANITIZE_NUMBER_INT);
+$ok=new ShowDetail;
+$fo=$ok->getDetailProductInfo($id);
+foreach ($fo as $key => $post) {
 ?>
 <section class="container-fluid ">
         <div class="row d-flex align-items-center detail">
@@ -35,9 +36,9 @@ if(isset($_GET['pr'])){
             
         </div><!--main-card-->
     </section><!--container header__container-->
-
     <?php 
-    }else{
+   }
+ }else{
         header('location: '.ROOT_URL.'index.php');
         die();
     }

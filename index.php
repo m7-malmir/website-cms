@@ -55,7 +55,7 @@ require_once 'header.php';
                   <img src="<?php echo $val['src1']; ?>" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php echo $val['title']; ?></a></h5>
-                    <a href="<?= ROOT_URL ?>details1.php?pr=<?php echo $val['id']; ?>" class="btn btn-primary">جزییات بیشتر</a>
+                    <a href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>" class="btn btn-primary">جزییات بیشتر</a>
                   </div>
                 </div>
               
