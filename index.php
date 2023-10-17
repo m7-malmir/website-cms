@@ -12,21 +12,21 @@ require_once 'header.php';
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/_DSC0856.jpg" class="d-block w-100" alt="...">
+            <img src="<?= ROOT_URL ?>img/_DSC0856.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>عنوان محصول</h5>
               <p>توضیحات محصول اول</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/_DSC0831.jpg" class="d-block w-100" alt="...">
+            <img src="<?= ROOT_URL ?>./img/_DSC0831.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>عنوان محصول</h5>
                 <p>توضیحات محصول اول</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/_DSC0830.jpg" class="d-block w-100" alt="...">
+            <img src="<?= ROOT_URL ?>./img/_DSC0830.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>عنوان محصول</h5>
                 <p>توضیحات محصول اول</p>
@@ -52,7 +52,7 @@ require_once 'header.php';
                 ?>
                 
                 <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="card card-index col-sm-1 col-md-4 col-lg-8 m-3">
-                  <img src="<?php echo $val['src1']; ?>" class="card-img-top" alt="...">
+                  <img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php echo $val['title']; ?></a></h5>
                     <a href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>" class="btn btn-primary">جزییات بیشتر</a>
