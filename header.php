@@ -2,6 +2,8 @@
 require './classes/dbh.php';
 require './classes/showProduct.classes.php';
 require './classes/showProduct-contr.classes.php';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -38,7 +40,7 @@ require './classes/showProduct-contr.classes.php';
         <div class="collapse navbar-collapse mr-4" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?= ROOT_URL ?>index.php">خانه<i class="bi bi-house-door-fill text-white"></i></a>
+              <a class="nav-link active" aria-current="page" href="<?= ROOT_URL ?>home">خانه<i class="bi bi-house-door-fill text-white"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,15 +52,15 @@ require './classes/showProduct-contr.classes.php';
                  $ok=$f->showProduct();
                  foreach ($ok as $key => $val) {
                 ?>
-                <li><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php print_r($val['title']); ?></a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL ?>details?pr=<?php echo $val['id']; ?>"><?php print_r($val['title']); ?></a></li>
                 <?php } ?>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= ROOT_URL ?>about.php" tabindex="-1" > درباره ما</a>
+              <a class="nav-link" href="<?= ROOT_URL ?>about" tabindex="-1" > درباره ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= ROOT_URL ?>contact.php" tabindex="-1" >تماس با ما</a>
+              <a class="nav-link" href="<?= ROOT_URL ?>contact" tabindex="-1" >تماس با ما</a>
             </li>
           </ul>
          

@@ -1,5 +1,6 @@
 <?php
 require_once 'header.php';
+
 ?>
 <section class="contact">
     <div class="container contact contact__container">
