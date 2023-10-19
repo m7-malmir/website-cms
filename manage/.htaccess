@@ -1,0 +1,6 @@
+#RewriteEngine on
+
+AuthName "Restricted Access"
+AuthType Basic
+AuthUserFile C:/xampp/htdocs/amini/manage/.htpasswd
+Require valid-user
