@@ -1,0 +1,12 @@
+#RewriteEngine on
+
+#AuthName "Restricted Access"
+#AuthType Basic
+#AuthUserFile C:/xampp/htdocs/amini/manage/.htpasswd
+#Require valid-user
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA]

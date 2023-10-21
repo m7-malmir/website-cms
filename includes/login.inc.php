@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
      //runnig error handler
      $login->loginUser();
      //going to back to front page
-     header("location: ../profile.php?error=none");
+     header("location: ../manage/profile");
 
 
 } 
