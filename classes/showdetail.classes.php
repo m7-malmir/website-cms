@@ -1,5 +1,5 @@
 <?php
-require_once 'dbh.php';
+require_once 'dbh.classes.php';
 class ShowDetail extends Dbh{
     public function getDetailProductInfo($id){
         //if(isset($_GET['pr'])){
