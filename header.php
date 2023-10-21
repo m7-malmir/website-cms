@@ -1,8 +1,7 @@
 <?php 
-require './classes/dbh.php';
-require './classes/showProduct.classes.php';
-require './classes/showProduct-contr.classes.php';
-
+include 'classes/dbh.php';
+include 'classes/showProduct.classes.php';
+include 'classes/showProduct-contr.classes.php';
 
 ?>
 <!DOCTYPE html>
