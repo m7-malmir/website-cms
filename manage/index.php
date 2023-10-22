@@ -1,14 +1,17 @@
 <?php
 function URL($key = null){ 
-     $arr=explode("/",trim($_GET['url']?? 'login',"/"));
+     $arr=explode("/",trim($_GET['url']?? 'profile',"/"));
      if(!is_numeric($key))
      return $arr;
     return $arr[$key] ?? '';
 }
-echo '<pre>';
-print_r(URL());
-echo '</pre>';
-echo 'page name is:' .URL(0);
+// echo '<pre>';
+// print_r(URL());
+// echo '</pre>';
+// echo 'page name is:' .URL(0);
+
+
+
  $file=URL(0).'.php';
 // echo $file;
 if($file=='index.php'){
@@ -18,4 +21,5 @@ if($file=='index.php'){
 }else{
     require '../404.php';
 }
+
 ?>
