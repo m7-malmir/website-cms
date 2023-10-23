@@ -1,5 +1,5 @@
 <?php
-include '../header.php';
+include './header.php';
 if(isset($_SESSION["useruid"])){
 ?>
 <section class="dashboord">
@@ -8,7 +8,7 @@ if(isset($_SESSION["useruid"])){
         <div class="left">
                     
         <?php
-        include 'partials/aside.php';
+        include 'aside.php';
         ?>
         </div><!--left-->
         <div class="right">
@@ -37,40 +37,40 @@ if(isset($_SESSION["useruid"])){
 
             <div class="recent-orders">
                 <h3>Manage Posts</h3>
-                <?php 
-                $query1="SELECT * FROM `posts` where author_id=$current_user_id";
-                $users=mysqli_query($mysqli,$query1);
-                if(mysqli_num_rows($users) > 0) : ?>
+                
                 <table>
                     <thead>
                       <tr>
                         <th>title</th>
-                        <th>category</th>
+                        <th>img</th>
+                        <th>img</th>
+                        <th>img</th>
+                        <th>img</th>
                         <th>Edit</th>
                         <th>Delete</th>  
                       </tr>
                      </thead>
                      <tbody>
-                        <?php while($post=mysqli_fetch_assoc($posts)) : ?>
-                            <?php
-                                $category_id=$post['category_id'];
-                                $cat_query="select title from categories where id=$category_id";
-                                $cat_res=mysqli_query($mysqli,$cat_query);
-                                $category=mysqli_fetch_assoc($cat_res);
-                            ?>
+                     <?php
+                        $f=new ShowProductContr();
+                        $ok=$f->showProduct();
+                        foreach($ok as $key=>$val) :
+                      ?>
                         <tr>
-                            <td><?= $post['title'] ?></td>
-                            <td><?= $category['title'] ?></td>
-                            <td><a href="<?= ROOT_URL ?>admin/edit-post.php?id=<?= $post['id'] ?>" ><button class="btn-blog">edit</button></a></td>
-                            <td class="warning"><a href="<?= ROOT_URL ?>admin/delete-post.php?id=<?= $post['id'] ?>" ><button class="btn-danger">delete</button></a></td>
-                            
+                            <td><?php echo $val['title']; ?></td>
+                            <td><img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" alt="" style="width:35%;"></td>
+                            <td><img src="<?= ROOT_URL ?><?php echo $val['src2']; ?>" alt="" style="width:15%;"></td>
+                            <td><img src="<?= ROOT_URL ?><?php echo $val['src3']; ?>" alt="" style="width:15%;"></td>
+                            <td><img src="<?= ROOT_URL ?><?php echo $val['src4']; ?>" alt="" style="width:15%;"></td>
+                            <td><a href="<?= ROOT_URL ?>admin/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">edit</button></a></td>
+                            <td class="warning"><a href="<?= ROOT_URL ?>admin/delete-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-danger">delete</button></a></td>
                         </tr>
-                        <?php endwhile ?>
+                        <?php endforeach ?>
                      </tbody>
                 </table>
-                 <?php else : ?>
+                 <!-- <?php ?>
                     <p class="alert">no post found </p>
-                    <?php endif ?>
+                    <?php ?> -->
                   
             </div><!--recent-order-->
             <div class="pagination">

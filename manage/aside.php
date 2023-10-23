@@ -2,13 +2,14 @@
     $users2   = 'users';
     $category='categories';
     $post='posts';
-      if (str_contains($query, $users2)) {
-         $user_export='active';
-     }elseif (str_contains($query, $category)) {
-        $cat_export='active';
-     }elseif(str_contains($query, $post)){
-        $post_export='active';
-     }
+
+    //   if (str_contains($query, $users2)) {
+    //      $user_export='active';
+    //  }elseif (str_contains($query, $category)) {
+    //     $cat_export='active';
+    //  }elseif(str_contains($query, $post)){
+    //     $post_export='active';
+    //  }
 ?>
             <aside> 
                 <div class="sidebar">

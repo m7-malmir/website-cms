@@ -1,22 +1,17 @@
 <?php
-require './config/database.php';
+include "../classes/dbh.classes.php";
+include '../classes/showProduct.classes.php';
+include '../classes/showProduct-contr.classes.php';
 
-//check login status
-
-if(!isset($_SESSION['user_id'])){
-    header('location:' .ROOT_URL.'signin.php');
-    die();
-}
+include '../classes/profileinfo.classes.php';
+include '../classes/profileinfo-view.classes.php';
+$profileinfo=new ProfileInfoView();
 //fetch current user avatar from database
-if(isset($_SESSION['user_id'])){
-    $id=filter_var($_SESSION['user_id'],FILTER_SANITIZE_NUMBER_INT);
-    $query="select avatar from users where id=$id";
-    $res=mysqli_query($mysqli,$query);
-    $avatar=mysqli_fetch_assoc($res);
+if(isset($_SESSION["useruid"])){
+    //echo $_SESSION["useruid"];
 }
 ?>
-
-<!DOCTYPE php>
+<!DOCTYPE>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +20,7 @@ if(isset($_SESSION['user_id'])){
     <title>Education Website</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="<?= ROOT_URL ?>css/style.css">
+    <link rel="stylesheet" href="<?= ROOT_URL ?>css/style-admin.css">
 </head>
 <body>
 <nav>
