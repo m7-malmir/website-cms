@@ -532,6 +532,7 @@ aside .sidebar .message-count{
 }
 .right .recent-orders table:hover{
     box-shadow: none;
+    direction: rtl;
 }
 .right table thead th{
     text-align: start;
