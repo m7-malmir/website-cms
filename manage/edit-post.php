@@ -15,35 +15,27 @@ foreach ($fo as $key => $post) :
 <section class="sign-in">
 <div class="container-login">
 <?php //if(isset($_SESSION['edit-post'])) : ?>
-<p class="alert">
+<!-- <p class="alert">
 
-</p>
+</p> -->
 <?php //endif ?>
-    <h3>Edit Post</h3>
+    <h3>ویرایش پست</h3>
     <form action="<?= ROOT_URL ?>admin/edit-post-logic.php" method="post" enctype="multipart/form-data" class="contact__form">
     <div class="form__name">
         <input type="hidden" name="id" value="<?= $post['id'] ?>">
     </div>
-    <div class="form__name">
-   
+    <div class="form__name">  
     </div>
     <div class="form__name">
-    <input type="text" value="<?= $post['title'] ?>" name="title" placeholder="title"><br/>
+    <input type="text" value="<?= $post['title'] ?>" name="title" placeholder="عنوان محصول"><br/>
     </div>
     <div class="form__name">
-    <textarea rows="4" name="body" cols="50" placeholder="Description"><?= $post['body'] ?></textarea><br/>
+    <textarea rows="4" name="body" cols="50" placeholder="توضیحات"><?= $post['body'] ?></textarea><br/>
     </div>
-    <div class="form__name">
-    <input type="checkbox" name="is_featured" value="1" checked>
-    </div>
-    <label for="is_featured">Featured</label><br>
-    <p>Change Thumbnail</p>
-    <input type="file" name="thumbnail"><br/>
     <input type="submit" name="submit" value="Update post"><br/> 
     </form>
     </div>
 </section>
-
 <?php
 endforeach;
 }

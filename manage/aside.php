@@ -16,7 +16,7 @@
                     <a href="add-post.php"><i class="uil uil-pen"></i>
                      <h4>Add Post</h4>
                     </a>
-                    <a href="index.php" class="<?= $post_export ?? null ?>"><i class="uil uil-postcard"></i>
+                    <a href="profile.php" class="<?= $post_export ?? null ?>"><i class="uil uil-postcard"></i>
                      <h4>Manage Post</h4>
                     </a>
                     
