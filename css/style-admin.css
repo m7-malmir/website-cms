@@ -1072,6 +1072,6 @@ header{
     flex-direction: column;
 }
 .contact__form input[type="text"]{
-    width: 100%;
+    width: 99%;
 }
 }
