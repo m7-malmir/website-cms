@@ -41,13 +41,13 @@ if(isset($_SESSION["useruid"])){
                 <table>
                     <thead>
                       <tr>
-                        <th>title</th>
+                        <th>عنوان</th>
                         <th>img</th>
                         <th>img</th>
                         <th>img</th>
                         <th>img</th>
-                        <th>Edit</th>
-                        <th>Delete</th>  
+                        <th>ویرایش</th>
+                        <th>حدف کردن</th>  
                       </tr>
                      </thead>
                      <tbody>
@@ -62,8 +62,8 @@ if(isset($_SESSION["useruid"])){
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src2']; ?>" alt="" style="width:15%;"></td>
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src3']; ?>" alt="" style="width:15%;"></td>
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src4']; ?>" alt="" style="width:15%;"></td>
-                            <td><a href="<?= ROOT_URL ?>manage/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">edit</button></a></td>
-                            <td class="warning"><a href="<?= ROOT_URL ?>admin/delete-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-danger">delete</button></a></td>
+                            <td><a href="<?= ROOT_URL ?>manage/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">ویرایش</button></a></td>
+                            <td class="warning"><a href="<?= ROOT_URL ?>admin/delete-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-danger">حذف</button></a></td>
                         </tr>
                         <?php endforeach ?>
                      </tbody>

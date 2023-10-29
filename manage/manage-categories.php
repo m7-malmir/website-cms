@@ -8,8 +8,6 @@ $categories=mysqli_query($mysqli,$query);
 
 
     <section class="dashboord">
-     
-
     <div class="dashboord__container"> 
     
         <div class="left">
@@ -54,9 +52,9 @@ unset($_SESSION['add-category-success']);
                 <table>
                     <thead>
                       <tr>
-                        <th>title</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>عنوان</th>
+                        <th>ویرایش</th>
+                        <th>حذف کردن</th>
                         
                       </tr>
                      </thead>
