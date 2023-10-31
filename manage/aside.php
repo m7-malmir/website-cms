@@ -20,7 +20,7 @@
                      <h4>Manage Post</h4>
                     </a>
                     
-                    <a href="add-user.php"><i class="uil uil-user-plus"></i>
+                    <a href="edit-contact.php"><i class="uil uil-user-plus"></i>
                      <h4>Edit Contact</h4>
                     </a>
                   
