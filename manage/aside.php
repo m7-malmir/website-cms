@@ -13,7 +13,7 @@
 ?>
             <aside> 
                 <div class="sidebar">
-                    <a href="add-post.php"><i class="uil uil-pen"></i>
+                    <a href="#"><i class="uil uil-pen"></i>
                      <h4>افزودن پست</h4>
                     </a>
                     <a href="profile.php" class="<?= $post_export ?? null ?>"><i class="uil uil-postcard"></i>

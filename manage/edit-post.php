@@ -20,19 +20,19 @@ foreach ($fo as $key => $post) :
 </p> -->
 <?php //endif ?>
     <h3>ویرایش پست</h3>
-    <form action="<?= ROOT_URL ?>admin/edit-post-logic.php" method="post" enctype="multipart/form-data" class="contact__form">
+    <form action="<?= ROOT_URL ?>includes/posts.inc.php" method="post" enctype="multipart/form-data" class="contact__form">
     <div class="form__name">
         <input type="hidden" name="id" value="<?= $post['id'] ?>">
     </div>
     <div class="form__name">  
     </div>
     <div class="form__name">
-    <input type="text" value="<?= $post['title'] ?>" name="title" placeholder="عنوان محصول"><br/>
+    <input type="text" value="<?= $post['title'] ?>" name="title" placeholder="<?= $post['title'] ?>"><br/>
     </div>
     <div class="form__name">
     <textarea rows="4" name="body" cols="50" placeholder="توضیحات"><?= $post['body'] ?></textarea><br/>
     </div>
-    <input type="submit" name="submit" value="Update post"><br/> 
+    <input type="submit" name="submit" value="ثبت ویرایش"><br/> 
     </form>
     </div>
 </section>
