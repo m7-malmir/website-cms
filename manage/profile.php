@@ -36,18 +36,15 @@ if(isset($_SESSION["useruid"])){
     <?php endif ?>
 
             <div class="recent-orders">
-                <h3>Manage Posts</h3>
+                <h3>مدیریت پست ها</h3>
                 
                 <table>
                     <thead>
                       <tr>
                         <th>عنوان</th>
                         <th>img</th>
-                        <th>img</th>
-                        <th>img</th>
-                        <th>img</th>
                         <th>ویرایش</th>
-                        <th>حدف کردن</th>  
+                        <th>حدف </th>  
                       </tr>
                      </thead>
                      <tbody>
@@ -59,9 +56,7 @@ if(isset($_SESSION["useruid"])){
                         <tr>
                             <td><?php echo $val['title']; ?></td>
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" alt="" style="width:35%;"></td>
-                            <td><img src="<?= ROOT_URL ?><?php echo $val['src2']; ?>" alt="" style="width:15%;"></td>
-                            <td><img src="<?= ROOT_URL ?><?php echo $val['src3']; ?>" alt="" style="width:15%;"></td>
-                            <td><img src="<?= ROOT_URL ?><?php echo $val['src4']; ?>" alt="" style="width:15%;"></td>
+                          
                             <td><a href="<?= ROOT_URL ?>manage/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">ویرایش</button></a></td>
                             <td class="warning"><a href="<?= ROOT_URL ?>admin/delete-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-danger">حذف</button></a></td>
                         </tr>

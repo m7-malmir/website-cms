@@ -1,32 +1,38 @@
 <?php
-require 'config/database.php';
+include './header.php';
+
+require_once '../classes/showAbout.classes.php';
+require_once '../classes/showAbout-contr.classes.php';
 
 
-    $id=filter_var($_GET['id'],FILTER_SANITIZE_NUMBER_INT);
+?>
+<section class="sign-in">
+<div class="container-login">
+<?php //if(isset($_SESSION['edit-post'])) : ?>
+<!-- <p class="alert">
 
-    //fetch post from database in order to delete thumbnail from img folder 
+</p> -->
+<?php 
+  $f=new ShowAboutContr();
+  $ok=$f->showAbout();
+ //print_r($ok);
+ ?>
+    <h3>ویرایش درباره ما</h3>
+    <form action="<?= ROOT_URL ?>includes/contact.inc.php" method="post"  class="contact__form">
+        <h4>عنوان اصلی</h4>
+        <div class="form__name">
+    <input type="text" value="<?= $ok[0]['title'] ?>" name="title" placeholder="عنوان محصول"><br/>
+    </div>
+    
+    <h4>توضیحات درباره شرکت</h4>
+    <div class="form__name">
+    <textarea rows="10" name="body" cols="140" placeholder="توضیحات"><?= $ok[0]['descrip'] ?></textarea><br/>
+    </div>
+    <input type="submit" name="submit" value="ثبت نهایی ویرایش"><br/> 
+    </form>
+    </div>
+</section>
+<?php
 
-    $query="select * from posts where id=$id ";
-    $result=mysqli_query($mysqli,$query);
-
-    //make sure we got back only one user
-    if(mysqli_num_rows($result)==1){
-        $post=mysqli_fetch_assoc($result);
-        $thumbnail_name=$post['thumbnail'];
-        $thumbnail_path='../img/'.$thumbnail_name;
-         //delete image if available
-          if($thumbnail_path){
-            unlink($thumbnail_path);
-
-            //delete post from database 
-            $delete_post_query="delete from posts where id=$id limit 1";
-            $delete_post_result=mysqli_query($mysqli,$delete_post_query);
-
-            if(!mysqli_errno($mysqli)){
-                $_SESSION['delete-post-su']="post delete successfully";
-                }
-            }
-    }
-}
-header('location:' .ROOT_URL.'admin/');
-die();
+include('../footer.php');
+?>

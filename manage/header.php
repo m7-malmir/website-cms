@@ -25,12 +25,12 @@ if(isset($_SESSION["useruid"])){
 <body>
 <nav>
     <div class="container nav__container">
-        <a href="<?= ROOT_URL ?>"><h4>EGATOR</h4></a>
+        <a href="<?= ROOT_URL ?>"><h4>پنل مدیریت</h4></a>
         <ul class="nav__menu">
-            <li><a href="<?= ROOT_URL ?>blog.php"><h4>Blog</h4></a></li>
-            <li><a href="<?= ROOT_URL ?>about.php"><h4>About</h4></a></li>
-            <li><a href="<?= ROOT_URL ?>services.php"><h4>Services</h4></a></li>
-            <li><a href="<?= ROOT_URL ?>contact.php"><h4>Contact</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>home.php"><h4>خانه</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>about.php"><h4>درباره ما</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>home.php"><h4>پست ها</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>contact.php"><h4>تماس با ما</h4></a></li>
             <?php if(isset($_SESSION['user_id'])) : ?>
             <li class="nav__profile">
                 <div class="avatar">
