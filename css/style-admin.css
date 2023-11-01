@@ -184,7 +184,7 @@ top: 62;
   .nav__profile:hover #hidden {
     display: flex;
     flex-direction: column;
-    
+    width: max-content;
   }
 /*========================HEADER===================================*/
 header{
@@ -540,7 +540,6 @@ aside .sidebar .message-count{
     direction: rtl;
 }
 .right table thead th{
-    text-align: start;
     height: 3rem;
     background: #6469a9;
     padding-left: 1rem;

@@ -1,5 +1,6 @@
 <?php
 include './header.php';
+print_r($_SESSION);
 if(isset($_SESSION["useruid"])){
 ?>
 <section class="dashboord">
@@ -42,7 +43,7 @@ if(isset($_SESSION["useruid"])){
                     <thead>
                       <tr>
                         <th>عنوان</th>
-                        <th>img</th>
+                        <th>تصویر اصلی محصول</th>
                         <th>ویرایش</th>
                         <th>حدف </th>  
                       </tr>
@@ -58,7 +59,7 @@ if(isset($_SESSION["useruid"])){
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" alt="" style="width:55%;"></td>
                           
                             <td><a href="<?= ROOT_URL ?>manage/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">ویرایش</button></a></td>
-                            <td class="warning"><a href="<?= ROOT_URL ?>admin/delete-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-danger">حذف</button></a></td>
+<td class="warning"><a href="#" ><button class="btn-danger">حذف</button></a></td>
                         </tr>
                         <?php endforeach ?>
                      </tbody>

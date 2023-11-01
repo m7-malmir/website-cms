@@ -31,14 +31,14 @@ if(isset($_SESSION["useruid"])){
             <li><a href="<?= ROOT_URL ?>about.php"><h4>درباره ما</h4></a></li>
             <li><a href="<?= ROOT_URL ?>home.php"><h4>پست ها</h4></a></li>
             <li><a href="<?= ROOT_URL ?>contact.php"><h4>تماس با ما</h4></a></li>
-            <?php if(isset($_SESSION['user_id'])) : ?>
+            <?php if(isset($_SESSION['useruid'])) : ?>
             <li class="nav__profile">
                 <div class="avatar">
-                    <img src="<?= ROOT_URL .'/img/'.$avatar['avatar']?>" alt="">
+                    <img src="<?= ROOT_URL .'/img/amini.jpg'?>" alt="">
                 </div>
                 <ul id="hidden">
-                    <li><a href="<?= ROOT_URL ?>admin/index.php">Dashboord</a></li>
-                    <li><a href="<?= ROOT_URL ?>logout.php">Log Out</a></li>
+                    <li>آقای امینی</li>
+                    <li><a href="<?= ROOT_URL ?>logout.php">خروج</a></li>
                 </ul>  
             </li>
                 <?php else : ?>
