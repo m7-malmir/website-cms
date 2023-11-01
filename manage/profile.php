@@ -1,6 +1,6 @@
 <?php
 include './header.php';
-print_r($_SESSION);
+
 if(isset($_SESSION["useruid"])){
 ?>
 <section class="dashboord">
