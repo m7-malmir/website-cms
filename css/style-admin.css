@@ -380,9 +380,8 @@ header{
 /*==========================SIGN IN===================================*/
 .sign-in{
     margin-top: 5rem;
-    height: 100vh;
+    min-height: 100%;
     align-content: center;
-    display: grid;
 }
 .container-login{
     width: 45%;

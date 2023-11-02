@@ -25,7 +25,7 @@ if(isset($_SESSION["useruid"])){
 <body>
 <nav>
     <div class="container nav__container">
-        <a href="<?= ROOT_URL ?>"><h4>پنل مدیریت</h4></a>
+        <a href="<?= ROOT_URL ?>manage/profile.php"><h4>پنل مدیریت</h4></a>
         <ul class="nav__menu">
             <li><a href="<?= ROOT_URL ?>home.php"><h4>خانه</h4></a></li>
             <li><a href="<?= ROOT_URL ?>about.php"><h4>درباره ما</h4></a></li>

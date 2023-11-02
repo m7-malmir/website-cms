@@ -3,22 +3,19 @@ include './header.php';
 
 if(isset($_SESSION["useruid"])){
 ?>
-<section class="dashboord">
-    
+<section class="dashboord">  
     <div class="dashboord__container"> 
-        <div class="left">
-                    
+        <div class="left">            
         <?php
         include 'aside.php';
         ?>
         </div><!--left-->
         <div class="right">
-
-<?php if(isset($_SESSION['add-post-success'])) : ?>
+<?php if(isset($_SESSION['edit_post'])) : ?>
     <div class="container">  
     <p class="su-alert">
-    <?= $_SESSION['add-post-success'];
-    unset($_SESSION['add-post-success']);
+    <?= $_SESSION['edit_post'];
+    unset($_SESSION['edit_post']);
     ?>
     </p>
     <?php elseif(isset($_SESSION['edit-post-success'])) : ?>
@@ -35,10 +32,8 @@ if(isset($_SESSION["useruid"])){
     </p>
     </div>
     <?php endif ?>
-
             <div class="recent-orders">
-                <h3>مدیریت پست ها</h3>
-                
+                <h3>مدیریت پست ها</h3> 
                 <table>
                     <thead>
                       <tr>
@@ -59,7 +54,7 @@ if(isset($_SESSION["useruid"])){
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" alt="" style="width:55%;"></td>
                           
                             <td><a href="<?= ROOT_URL ?>manage/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">ویرایش</button></a></td>
-<td class="warning"><a href="#" ><button class="btn-danger">حذف</button></a></td>
+                            <td class="warning"><a href="#" ><button class="btn-danger">حذف</button></a></td>
                         </tr>
                         <?php endforeach ?>
                      </tbody>
@@ -79,7 +74,7 @@ if(isset($_SESSION["useruid"])){
 </section>
 <?php
 }else{
-   require 'login.php';
+   header('location:login.php');
 }
 include '../footer.php';
 

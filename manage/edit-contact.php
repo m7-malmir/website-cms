@@ -17,7 +17,6 @@ require_once '../classes/showAbout-contr.classes.php';
   $ok=$f->showAbout();
  //print_r($ok);
  ?>
-    <h3>ویرایش درباره ما</h3>
     <form action="<?= ROOT_URL ?>includes/contact.inc.php" method="post"  class="contact__form">
         <h4>عنوان اصلی</h4>
         <div class="form__name">

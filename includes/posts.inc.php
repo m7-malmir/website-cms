@@ -10,5 +10,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     include '../classes/showPost-contr.classes.php';
     $profileinfo=new ShowPostContr($id);
     $profileinfo->updatePostInfo($title,$body);
-    header("location:../profile.php?error=none");
+    $_SESSION['edit_post']='پست مورد نظر با موفقیت ویرایش شد';
+    header("location:../manage/profile.php");
 }
