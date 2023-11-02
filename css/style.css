@@ -251,65 +251,10 @@ a{
 /*=========================categories======================================*/
 
 .categories{
-  margin: 5rem 0 5rem 0;
-}
-.categories h1{
-    margin-bottom: 3rem;
-    line-height: 1;
-}
-.categories__container{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 4rem;
-}
-.categories__left p{
-    margin: 1rem 0 3rem;
-}
-.categories__right{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 1.2rem;
-}
-.category{
-    background: rgb(73 73 110);
-    padding: 2rem;
-    border-radius: 2rem;
-    transition:all 400ms ease;
-}
-.btn{
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
+ margin-top: 3rem;
+  background-color: #935ef5;
 }
 
-.category:hover{
-box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
-z-index: 1;
-}
-.category:nth-child(2) .category__icon{
-    background: #9cf1a2;
-}
-.category:nth-child(3) .category__icon{
-    background: #e9f1e9;
-}
-.category:nth-child(4) .category__icon{
-    background: #f9f9a2;
-}
-.category:nth-child(5) .category__icon{
-    background: #9cf1a2;
-}
-.category__icon{
-    background:#d3d3bc;
-    padding: 0.7rem;
-    border-radius: 0.9rem;
-    font-size: 1.5rem;
-}
-.category h5{
- margin: 2rem 0 1rem;
-}
-.category p{
-font-size: 0.85rem;
-}
 /*===========================Popular Courses================================*/
 
 /*===========================FAQs================================*/

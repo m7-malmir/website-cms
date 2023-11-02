@@ -18,10 +18,10 @@ if(isset($_SESSION["useruid"])){
     unset($_SESSION['edit_post']);
     ?>
     </p>
-    <?php elseif(isset($_SESSION['edit-post-success'])) : ?>
+    <?php elseif(isset($_SESSION['edit_contact'])) : ?>
         <p class="su-alert">
-    <?= $_SESSION['edit-post-success'];
-    unset($_SESSION['edit-post-success']);
+    <?= $_SESSION['edit_contact'];
+    unset($_SESSION['edit_contact']);
     ?>
     </p>
     <?php elseif(isset($_SESSION['delete-post-su'])) : ?>

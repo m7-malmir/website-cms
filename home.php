@@ -63,47 +63,9 @@ require_once 'header.php';
                 <?php endforeach; ?>
    
 </div>
-<div class="categories row">
-       
-    <div class="col-md-3">
-        <h1>دسته بندی ها</h1>
-        <p>
-            توضیحات مریوط به دسته بندی مواد و محصولات
-        </p>
-        <a href="#" class="btn">بیشتر  بدانید...</a>
-    </div><!--categories__left-->
-    <div class="col-md-9 d-flex row">
-        <article class="category col-md-3 m-3">
-            <span class="category__icon"><i class="uil uil-bitcoin"></i></span><!--category__icon-->
-            <h5>عنوان دسته بندی</h5>
-            <p>توضیح مربوط به دسته بندی مورد نظر.</p>
-        </article><!--category-->
-        <article class="category col-md-3 m-3">
-            <span class="category__icon"><i class="uil uil-palette"></i></span><!--category__icon-->
-            <h5>عنوان دسته بندی</h5>
-            <p>توضیح مربوط به دسته بندی مورد نظر شما</p>
-        </article><!--category-->
-        <article class="category col-md-3 m-3">
-            <span class="category__icon"><i class="uil uil-dollar-sign-alt"></i></span><!--category__icon-->
-            <h5>عنوان دسته بندی</h5>
-            <p>توضیح مربوط به دسته بندی مورد نظر شما</p>
-        </article><!--category-->
-        <article class="category col-md-3 m-3">
-            <span class="category__icon"><i class="uil uil-megaphone"></i></span><!--category__icon-->
-            <h5>عنوان دسته بندی</h5>
-            <p>توضیح مربوط به دسته بندی مورد نظر شما</p>
-        </article><!--category-->
-        <article class="category col-md-3 m-3">
-            <span class="category__icon"><i class="uil uil-music"></i></span><!--category__icon-->
-            <h5>عنوان دسته بندی</h5>
-            <p>توضیح مربوط به دسته بندی مورد نظر شما</p>
-        </article><!--category-->
-        <article class="category col-md-3 m-3">
-            <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span><!--category__icon-->
-            <h5>عنوان دسته بندی</h5>
-            <p>توضیح مربوط به دسته بندی مورد نظر شما</p>
-        </article><!--category-->
-    </div><!--categories__right-->
+<div class="categories">
+       <h2>   با ما بهترین باشید</h2>
+
 
 </div><!--categories-->
 </section><!--container-->

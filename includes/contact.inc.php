@@ -8,5 +8,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     include '../classes/showAbout-contr.classes.php';
     $profileinfo=new ShowAboutContr();
     $profileinfo->updateContactInfo( $title,$body);
-    header("location:../profile.php?error=none");
+    $_SESSION['edit_contact']=' بخش درباره ما با موفقیت ویرایش شد';
+    header("location:../manage/profile.php");
 }

@@ -38,7 +38,7 @@ if(isset($_SESSION["useruid"])){
                 </div>
                 <ul id="hidden">
                     <li>آقای امینی</li>
-                    <li><a href="<?= ROOT_URL ?>logout.php">خروج</a></li>
+                    <li><a href="<?= ROOT_URL ?>includes/logout.inc.php">خروج</a></li>
                 </ul>  
             </li>
                 <?php else : ?>
