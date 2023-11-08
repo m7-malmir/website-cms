@@ -1,6 +1,5 @@
 <?php
 require_once 'header.php';
-
 ?>
 <section class="contact">
     <div class="container contact contact__container">
@@ -41,13 +40,11 @@ require_once 'header.php';
             </div><!--form__name-->
             <input type="" name="email address" placeholder="ایمیل شما" required>
             <textarea name="message" id="" placeholder="Mwssage"  rows="7" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary">ارسال پیام</button>
         </form>
 
     </div><!--container contact contact__container-->
 </section><!--contact-->
-
-
 <?php 
 require_once 'footer.php';
 ?>
