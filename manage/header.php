@@ -3,10 +3,6 @@ include "../classes/dbh.classes.php";
 include '../classes/showProduct.classes.php';
 include '../classes/showProduct-contr.classes.php';
 
-include '../classes/profileinfo.classes.php';
-include '../classes/profileinfo-view.classes.php';
-$profileinfo=new ProfileInfoView();
-//fetch current user avatar from database
 if(isset($_SESSION["useruid"])){
     //echo $_SESSION["useruid"];
 }
@@ -25,12 +21,12 @@ if(isset($_SESSION["useruid"])){
 <body>
 <nav>
     <div class="container nav__container">
-        <a href="<?= ROOT_URL ?>manage/profile.php"><h4>پنل مدیریت</h4></a>
+        <a href="<?= ROOT_URL ?>manage/profile"><h4>پنل مدیریت</h4></a>
         <ul class="nav__menu">
-            <li><a href="<?= ROOT_URL ?>home.php"><h4>خانه</h4></a></li>
-            <li><a href="<?= ROOT_URL ?>about.php"><h4>درباره ما</h4></a></li>
-            <li><a href="<?= ROOT_URL ?>home.php"><h4>پست ها</h4></a></li>
-            <li><a href="<?= ROOT_URL ?>contact.php"><h4>تماس با ما</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>home"><h4>خانه</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>about"><h4>درباره ما</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>home"><h4>پست ها</h4></a></li>
+            <li><a href="<?= ROOT_URL ?>contact"><h4>تماس با ما</h4></a></li>
             <?php if(isset($_SESSION['useruid'])) : ?>
             <li class="nav__profile">
                 <div class="avatar">

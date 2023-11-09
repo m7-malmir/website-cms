@@ -3,8 +3,8 @@
 if(isset($_POST['submit'])){
 
     //grab link to data
-    $uid=$_POST['uid'];
-    $pwd=$_POST['pwd'];
+    $uid=htmlspecialchars($_POST['uid'],ENT_QUOTES,'UTF-8');
+    $pwd=htmlspecialchars($_POST['pwd'],ENT_QUOTES,'UTF-8');
 
 
      //instantiate signup contr class
@@ -15,7 +15,8 @@ if(isset($_POST['submit'])){
      //runnig error handler
      $login->loginUser();
      //going to back to front page
-     header("location: ../manage/profile");
+       $_SESSION['succ-login']='ورود شما با موفقیت انجام شد';
+    header("location:../manage/profile.php");
 
 
 } 

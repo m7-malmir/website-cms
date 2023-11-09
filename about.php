@@ -8,7 +8,12 @@ $ok=$f->showAbout();
 ?>
     <section class="container-fluid ">
         <div class="text-center d-flex flex-column justify-content-center align-items-center mt-5">
-            <img style="width:20rem;" src="<?= ROOT_URL ?>img/IMG-20230614-WA0000.jpg" alt="">
+            <div class="d-flex">
+            <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0831.jpg" alt="">
+        <img style="width:20rem;" src="<?= ROOT_URL ?>img/IMG-20231106-WA0000.jpg" alt="">
+        <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0856.jpg" alt="">
+            </div>
+        
             <h1><?= $ok[0]['title'] ?></h1>
             <p>
             <?= $ok[0]['descrip'] ?>

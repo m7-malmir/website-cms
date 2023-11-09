@@ -12,7 +12,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     include '../classes/dbh.classes.php';
     include '../classes/profileinfo.classes.php';
     include '../classes/profileinfo-contr.classes.php';
-    $profileinfo=new ProfileInfoContr( $id, $uid);
+    $profileinfo=new ProfileInfoContr($id, $uid);
     $profileinfo->updateProfileInfo($about, $introtitle,$introtext);
-    header("location:../profile.php?error=none");
+    $_SESSION['succ-login']='ورود شما با موفقیت انجام شد';
+    header("location:../manage/profile.php");
 }

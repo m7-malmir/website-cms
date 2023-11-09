@@ -11,8 +11,10 @@ if(isset($_SESSION["useruid"])){
         ?>
         </div><!--left-->
         <div class="right">
+      
+
 <?php if(isset($_SESSION['edit_post'])) : ?>
-    <div class="container">  
+  
     <p class="su-alert">
     <?= $_SESSION['edit_post'];
     unset($_SESSION['edit_post']);
@@ -24,13 +26,13 @@ if(isset($_SESSION["useruid"])){
     unset($_SESSION['edit_contact']);
     ?>
     </p>
-    <?php elseif(isset($_SESSION['delete-post-su'])) : ?>
+    <?php elseif(isset($_SESSION['succ-login'])) : ?>
         <p class="su-alert">
-    <?= $_SESSION['delete-post-su'];
-    unset($_SESSION['delete-post-su']);
+    <?= $_SESSION['succ-login'];
+    unset($_SESSION['succ-login']);
     ?>
     </p>
-    </div>
+    
     <?php endif ?>
             <div class="recent-orders">
                 <h3>مدیریت پست ها</h3> 

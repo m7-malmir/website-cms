@@ -3,11 +3,19 @@ require_once '../header.php';
 ?>
 <section class="contact">
     <div class="container contact contact__container">
+   
         <div>
             <img src="<?= ROOT_URL ?>img/Web-Designing-PNG-Images-HD.png" alt="">
         </div>
         <div>
              <h2> ورود مدیریت</h2>
+             <?php if(isset($_SESSION['wrong-pass'])) : ?>
+            
+            <p class="su-alert">
+            <?= $_SESSION['wrong-pass'];
+            unset($_SESSION['wrong-pass']);
+                endif;
+            ?>
             <form  action="../includes/login.inc.php" method="post" class="contact__form">
                 <div class="form__name">
                 <input type="text" name="uid" placeholder="نام کاربری" style="width:100%;">
