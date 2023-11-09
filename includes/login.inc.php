@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
      $login->loginUser();
      //going to back to front page
        $_SESSION['succ-login']='ورود شما با موفقیت انجام شد';
-    header("location:../manage/profile.php");
+    header("location:../manage/profile");
 
 
 } 

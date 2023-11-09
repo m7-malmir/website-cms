@@ -11,5 +11,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $profileinfo=new ShowPostContr($id);
     $profileinfo->updatePostInfo($title,$body);
     $_SESSION['edit_post']='پست مورد نظر با موفقیت ویرایش شد';
-    header("location:../manage/profile.php");
+    header("location:../manage/profile");
 }

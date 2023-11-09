@@ -55,7 +55,7 @@ if(isset($_SESSION["useruid"])){
                             <td><?php echo $val['title']; ?></td>
                             <td><img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" alt="" style="width:55%;"></td>
                           
-                            <td><a href="<?= ROOT_URL ?>manage/edit-post.php?id=<?php echo $val['id']; ?>" ><button class="btn-blog">ویرایش</button></a></td>
+                            <td><a href="<?= ROOT_URL ?>manage/edit-post?id=<?php echo $val['id']; ?>" ><button class="btn-blog">ویرایش</button></a></td>
                             <td class="warning"><a href="#" ><button class="btn-danger">حذف</button></a></td>
                         </tr>
                         <?php endforeach ?>
@@ -76,7 +76,7 @@ if(isset($_SESSION["useruid"])){
 </section>
 <?php
 }else{
-   header('location:login.php');
+   header('location:login');
 }
 include '../footer.php';
 

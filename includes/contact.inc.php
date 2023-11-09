@@ -9,5 +9,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $profileinfo=new ShowAboutContr();
     $profileinfo->updateContactInfo( $title,$body);
     $_SESSION['edit_contact']=' بخش درباره ما با موفقیت ویرایش شد';
-    header("location:../manage/profile.php");
+    header("location:../manage/profile");
 }
