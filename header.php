@@ -62,7 +62,7 @@ include 'classes/showProduct-contr.classes.php';
               <a class="nav-link" href="<?= ROOT_URL ?>contact" tabindex="-1" >تماس با ما</a>
             </li>
 <li>
-<?php if(isset($_SESSION['admin'])): ?>
+<?php if(isset($_SESSION['useruid'])): ?>
 <ul id="hidden">
   <li>آقای امینی</li>
   <li><a href="<?= ROOT_URL ?>includes/logout.inc.php">خروج</a></li>
