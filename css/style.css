@@ -39,6 +39,14 @@ body{
     width:var(--container-width-lg);
     margin:0 auto;
 }
+
+
+#hidden {
+    display: none;
+    position: absolute;
+top: 62;
+  }
+
 section{
     padding:2rem 0;
 }
