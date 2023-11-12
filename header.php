@@ -37,7 +37,8 @@ include 'classes/showProduct-contr.classes.php';
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse mr-4" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style=" width: 100%;">
+            <div class="sticky">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="<?= ROOT_URL ?>home">خانه<i class="bi bi-house-door-fill text-white"></i></a>
             </li>
@@ -61,14 +62,22 @@ include 'classes/showProduct-contr.classes.php';
             <li class="nav-item">
               <a class="nav-link" href="<?= ROOT_URL ?>contact" tabindex="-1" >تماس با ما</a>
             </li>
-<li>
-<?php if(isset($_SESSION['useruid'])): ?>
-<ul id="hidden">
-  <li>آقای امینی</li>
-  <li><a href="<?= ROOT_URL ?>includes/logout.inc.php">خروج</a></li>
-        </ul>  
-<?php endif; ?>
-</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li></li>
+            <?php if(isset($_SESSION['useruid'])) : ?>
+            <li class="nav__profile">
+                
+                    <img src="<?= ROOT_URL .'/img/amini.jpg'?>" alt="">
+               
+                <ul id="hidden">
+                    <li>آقای امینی</li>
+                    <li><a href="<?= ROOT_URL ?>includes/logout.inc.php">خروج</a></li>
+                </ul>  
+            </li>
+                <?php else : ?>
+            <li><a href="<?= ROOT_URL ?>signin.php"><h4></h4></a></li>
+            <?php endif; ?>
+            </div>
           </ul>
          
         </div>
