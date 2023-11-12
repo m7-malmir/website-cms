@@ -5,7 +5,7 @@ if(isset($_GET['pr'])){
 $id=filter_var($_GET['pr'],FILTER_SANITIZE_NUMBER_INT);
 $ok=new ShowDetail;
 $fo=$ok->getDetailProductInfo($id);
-foreach ($fo as $key => $post) {
+foreach ($fo as $key => $post) { 
 ?>
 <section class="container-fluid ">
         <div class="row d-flex align-items-center detail">

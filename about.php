@@ -8,14 +8,15 @@ $ok=$f->showAbout();
 ?>
     <section class="container-fluid ">
         <div class="text-center d-flex flex-column justify-content-center align-items-center mt-5">
+              <h1 class="mb-4 mt-2"><?= $ok[0]['title'] ?></h1>
             <div class="d-flex">
             <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0831.jpg" alt="">
         <img style="width:20rem;" src="<?= ROOT_URL ?>img/IMG-20231106-WA0000.jpg" alt="">
         <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0856.jpg" alt="">
             </div>
         
-            <h1><?= $ok[0]['title'] ?></h1>
-            <p>
+          
+            <p class="mb-4 mt-5">
             <?= $ok[0]['descrip'] ?>
             </p>
 
