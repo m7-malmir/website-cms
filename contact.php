@@ -14,7 +14,7 @@ require_once 'header.php';
             <ul class="contact__details">
                 <li>
                     <i class="uil uil-phone-times"></i>
-                    <div>موبایل : <a href="tel:09121857214">09121857214</a></div>
+                    <div>موبایل : <a href="tel:+989905950786">09905950786</a></div>
                 </li>
                 <li>
                 <i class="uil uil-envelope-alt"></i>
@@ -27,9 +27,8 @@ require_once 'header.php';
             </ul>
             <ul class="contact__socials">
                 <li> <a href="#"><i class="uil uil-instagram"></i></a></li>
-                <li> <a href="#"><i class="uil uil-facebook"></i></a></li>
-                <li> <a href="#"><i class="uil uil-twitter-alt"></i></a></li>
-                <li> <a href="#"><i class="uil uil-linkedin"></i></a></li>
+                <li> <a href="https://t.me/subasayesh"><i class="uil uil-telegram"></i></a></li>
+                <li> <a href="#"><i class="uil uil-whatsapp"></i></a></li>
              </ul>
         </aside><!--contact__aside-->
 

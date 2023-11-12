@@ -33,9 +33,9 @@
             </div>
             <ul class="footer__socials">
                 <li> <a href="#"><i class="uil uil-instagram"></i></a></li>
-                <li> <a href="#"><i class="uil uil-facebook"></i></a></li>
-                <li> <a href="#"><i class="uil uil-twitter-alt"></i></a></li>
-                <li> <a href="#"><i class="uil uil-linkedin"></i></a></li>
+                <li> <a href="#"><i class="uil uil-whatsapp"></i></a></li>
+                <li> <a href="https://t.me/subasayesh"><i class="uil uil-telegram"></i></a></li>
+                
              </ul>
         </div><!--footer__4-->
        

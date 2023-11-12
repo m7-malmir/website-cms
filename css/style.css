@@ -418,7 +418,7 @@ footer ul li a:hover{
 .footer__socials{
     display: flex;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
 }
 .footer__copyright{
