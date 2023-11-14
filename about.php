@@ -1,3 +1,9 @@
+<?php require_once 'up-header.php'; ?>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="سوباسایش, subasayesh, درباره ما" />
+    <meta name="description" content="سوباسایش تولید کننده ابزار سایش">
+    <title>درباره ما </title>
 <?php
 require_once 'header.php';
 require_once './classes/showAbout.classes.php';

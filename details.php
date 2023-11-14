@@ -1,3 +1,9 @@
+<?php require_once 'up-header.php'; ?>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="description" content="">
+    <title>جزییات محصول </title>
 <?php 
 require_once 'header.php';
 require_once './classes/showdetail.classes.php';

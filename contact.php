@@ -1,3 +1,9 @@
+<?php require_once 'up-header.php'; ?>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="سوباسایش, subasayesh,  تماس با سوبا سایش" />
+    <meta name="description" content="سوباسایش تولید کننده ابزار سایش">
+    <title>تماس با ما </title>
 <?php
 require_once 'header.php';
 ?>

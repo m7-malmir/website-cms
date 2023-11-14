@@ -1,8 +1,12 @@
+<?php require_once 'up-header.php'; ?>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ابزار صنعتی, subasayesh" />
+    <meta name="description" content="تامین سایش البرز">
+    <title> تامین سایش البرز</title>
 <?php
 require_once 'header.php';
-
 ?>
-
 <section class="container">
 <header>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">

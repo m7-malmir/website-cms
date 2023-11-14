@@ -1,15 +1,4 @@
-<?php 
-include 'classes/dbh.classes.php';
-include 'classes/showProduct.classes.php';
-include 'classes/showProduct-contr.classes.php'; 
 
-?>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Subasayesh </title>
     <link rel="icon" href="<?= ROOT_URL ?>img/IMG-20230614-WA0000.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
