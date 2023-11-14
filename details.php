@@ -1,11 +1,11 @@
-<?php require_once 'up-header.php'; ?>
+<?php require_once './up-header.php'; ?>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="keyword1, keyword2, keyword3" />
     <meta name="description" content="">
     <title>جزییات محصول </title>
 <?php 
-require_once 'header.php';
+require_once './header.php';
 require_once './classes/showdetail.classes.php';
 if(isset($_GET['pr'])){
 $id=filter_var($_GET['pr'],FILTER_SANITIZE_NUMBER_INT);
@@ -17,7 +17,7 @@ foreach ($fo as $key => $post) {
         <div class="row d-flex align-items-center detail">
         <div dir="ltr" class="col-md-5  text-center ">
             <div class="col-md-6">
-                <img class="img-fluid1" src="<?= $post['src1'] ?>" alt="<?= $post['key1'] ?>">
+                <img class="img-fluid1" src="<?= ROOT_URL ?><?= $post['src1'] ?>" alt="<?= $post['key1'] ?>">
             </div>
             <!-- <div class="col-md-6">
                 <img src="./img/<?= $post['src2'] ?>" alt="<?= $post['key2'] ?>">
@@ -47,6 +47,6 @@ foreach ($fo as $key => $post) {
         header('location: '.ROOT_URL.'index.php');
         die();
     }
-    require_once 'footer.php';
+    require_once './footer.php';
     
     ?>

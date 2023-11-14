@@ -51,6 +51,8 @@ require_once 'header.php';
 <div class="cards mt-3 align-center row d-flex justify-content-center">
   <div class="text-center m-4"><h2>محبوب ترین محصولات ما</h2></div>
   <?php
+  
+   
                 $f=new ShowProductContr();
                 $ok=$f->showProduct();
                 foreach($ok as $key=>$val) :
@@ -59,8 +61,8 @@ require_once 'header.php';
                 <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="card card-index col-sm-1 col-md-4 col-lg-8 m-3">
                   <img src="<?= ROOT_URL ?><?php echo $val['src1']; ?>" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="dropdown-item" href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>"><?php echo $val['title']; ?></a></h5>
-                    <a href="<?= ROOT_URL ?>details.php?pr=<?php echo $val['id']; ?>" class="btn btn-primary">جزییات بیشتر</a>
+                    <h5 class="card-title"><a class="dropdown-item" href="#"><?php echo $val['title']; ?></a></h5>
+                    <a href="<?= ROOT_URL ?>details?pr=<?php echo $val['id']; ?>/<?php echo str_replace(' ', '-', $val['title']); ?>" class="btn btn-primary">جزییات بیشتر</a>
                   </div>
                 </div>
               

@@ -1,4 +1,5 @@
 <?php
+require_once '../up-header.php';
 require_once '../header.php';
 ?>
 <section class="contact">

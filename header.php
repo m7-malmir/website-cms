@@ -41,7 +41,7 @@
                  $ok=$f->showProduct();
                  foreach ($ok as $key => $val) {
                 ?>
-                <li><a class="dropdown-item" href="<?= ROOT_URL ?>details?pr=<?php echo $val['id']; ?>"><?php print_r($val['title']); ?></a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL ?>details?pr=<?php echo $val['id']; ?>/<?php echo str_replace(' ', '-', $val['title']); ?>"><?php print_r($val['title']); ?></a></li>
                 <?php } ?>
               </ul>
             </li>
