@@ -1,7 +1,7 @@
 <?php require_once 'up-header.php'; ?>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="ابزار صنعتی, subasayesh" />
+    <meta name="keywords" content=" تولید کننده محصولات ساینده, subasayesh" />
     <meta name="description" content="تامین سایش البرز">
     <title> تامین سایش البرز</title>
 <?php

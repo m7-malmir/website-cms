@@ -15,10 +15,13 @@ $ok=$f->showAbout();
     <section class="container-fluid ">
         <div class="text-center d-flex flex-column justify-content-center align-items-center mt-5">
               <h1 class="mb-4 mt-2"><?= $ok[0]['title'] ?></h1>
-            <div class="d-flex">
-            <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0831.jpg" alt="">
-        <img style="width:20rem;" src="<?= ROOT_URL ?>img/IMG-20231106-WA0000.jpg" alt="">
-        <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0856.jpg" alt="">
+              <div class="cards mt-3 align-center row d-flex justify-content-center">
+              <img style="width:40rem;" src="<?= ROOT_URL ?>img/_DSC0831.jpg" alt="">
+              </div>
+            <div class="cards mt-3 align-center row d-flex justify-content-center">
+            
+            <img style="width:20rem;" src="<?= ROOT_URL ?>img/IMG-20231106-WA0000.jpg" alt="">
+            <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0856.jpg" alt="">
             </div>
         
           

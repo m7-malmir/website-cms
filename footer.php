@@ -32,9 +32,9 @@
                 <p>آدرس دفتر فروش: تهران سید خندان ابتدای خیابان کابلی پلاک ۱۰ واحد ۹</p>
             </div>
             <ul class="footer__socials">
-                <li> <a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li> <a href="https://instagram.com/subasayesh?igshid=OGQ5ZDc2ODk2ZA=="><i class="uil uil-instagram"></i></a></li>
                 <li> <a href="#"><i class="uil uil-whatsapp"></i></a></li>
-                <li> <a href="https://t.me/subasayesh"><i class="uil uil-telegram"></i></a></li>
+                <li> <a href="https://t.me/+989215239854"><i class="uil uil-telegram"></i></a></li>
                 
              </ul>
         </div><!--footer__4-->
