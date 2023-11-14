@@ -1,6 +1,5 @@
 <?php
 
-require_once './up-header.php';
 include './header.php';
 
 require_once '../classes/showAbout.classes.php';

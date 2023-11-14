@@ -1,5 +1,5 @@
 <?php
-include './up-header.php';
+//include './up-header.php';
 include './header.php';
 
 if(isset($_SESSION["useruid"])){

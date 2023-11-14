@@ -1,5 +1,5 @@
 <?php
-require_once './up-header.php';
+
 include './header.php';
 require_once '../classes/showdetail.classes.php';
 if(isset($_GET['id'])){
