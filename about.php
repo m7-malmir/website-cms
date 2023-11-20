@@ -23,10 +23,8 @@ $ok=$f->showAbout();
             <img style="width:20rem;" src="<?= ROOT_URL ?>img/IMG-20231106-WA0000.jpg" alt="">
             <img style="width:20rem;" src="<?= ROOT_URL ?>img/_DSC0856.jpg" alt="">
             </div>
-        
-          
             <p class="mb-4 mt-5">
-            <?= $ok[0]['descrip'] ?>
+            <?= $ok[0]['descrip']; ?>
             </p>
 
         </div>
